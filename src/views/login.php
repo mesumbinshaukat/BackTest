@@ -14,13 +14,9 @@
         <div class="header">
             <h1>Login</h1>
         </div>
-        <div class="navbar">
-            <a href="?action=home">Home</a>
-            <a href="?action=login">Login</a>
-            <a href="?action=signup">Sign Up</a>
-        </div>
+        <?php include 'navbar.php'; ?>
         <div class="content">
-            <form action="/backtest/public/api.php?action=create_user" method="POST">
+            <form action="/backtest/public/api.php?action=login" method="POST">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
                 <label for="password">Password:</label>

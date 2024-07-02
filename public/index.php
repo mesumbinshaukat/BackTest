@@ -1,22 +1,24 @@
 <?php
-require_once '../config/config.php';
-
 session_start();
-
 $action = $_GET['action'] ?? 'home';
 
 switch ($action) {
     case 'home':
-        require '../src/views/home.php';
+        include '../src/views/home.php';
         break;
     case 'login':
-        require '../src/views/login.php';
+        include '../src/views/login.php';
         break;
     case 'signup':
-        require '../src/views/signup.php';
+        include '../src/views/signup.php';
+        break;
+    case 'create_strategy':
+        include '../src/views/create_strategy.php';
+        break;
+    case 'view_strategies':
+        include '../src/views/strategies.php';
         break;
     default:
-        require '../src/views/404.php';
+        include '../src/views/home.php';
         break;
 }
-?>

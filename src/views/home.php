@@ -13,11 +13,8 @@
         <div class="header">
             <h1>Backtesting Dashboard</h1>
         </div>
-        <div class="navbar">
-            <a href="?action=home">Home</a>
-            <a href="?action=login">Login</a>
-            <a href="?action=signup">Sign Up</a>
-        </div>
+        <?php include 'navbar.php'; ?>
+
         <div class="content">
             <h2>Welcome to the Backtesting Dashboard</h2>
             <p>This is the landing page of the backtesting dashboard.</p>

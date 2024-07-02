@@ -1,4 +1,3 @@
-<!-- src/views/signup.php -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="/backtest/assets/css/style.css">
 </head>
 
 <body>
@@ -14,11 +13,7 @@
         <div class="header">
             <h1>Sign Up</h1>
         </div>
-        <div class="navbar">
-            <a href="?action=home">Home</a>
-            <a href="?action=login">Login</a>
-            <a href="?action=signup">Sign Up</a>
-        </div>
+        <?php include 'navbar.php'; ?>
         <div class="content">
             <form action="/backtest/public/api.php?action=create_user" method="POST">
                 <label for="username">Username:</label>
